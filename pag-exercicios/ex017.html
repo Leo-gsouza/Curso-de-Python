@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Exercicio 17</title>
+</head>
+<body>
+    <main>
+        <p class="voltar"><a href="../index.html">Voltar</a></p>
+        <section>
+            <h1>Exercicio 17</h1>
+            <p>Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo. Calcule e mostre o comprimento da hipotenusa.</p>
+            <pre>
+                <code>
+<div>
+    cateto_oposto = int(input('Cateto Oposto: '))
+    cateto_adjacente = int(input('Cateto Adjacente: '))
+
+    hipotenusa = (cateto_oposto**2 + cateto_adjacente**2) ** 0.5
+
+    print (f'O valor da hipotenusa » {hipotenusa:.2f}')
+</div>
+                </code>
+            </pre>
+
+            <h2>Anotações</h2>
+            <p>Para fazer o calculo de raiz quadrada basta <strong>elevar o valor a potencia de 0.5</strong>.</p>
+        </section>
+    </main>
+</body>
+</html>

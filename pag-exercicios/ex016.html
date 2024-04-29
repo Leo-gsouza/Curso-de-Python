@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Exercicio 16</title>
+</head>
+<body>
+    <main>
+        <p class="voltar"><a href="../index.html">Voltar</a></p>
+        <section>
+            <h1>Exercicio 16</h1>
+            <p>Crie um programa que leia um número real qualquer pelo teclado e mostre na tela a sua porção Inteira.</p>
+            <pre>
+                <code>
+<div>
+    """ Obitendo a parte inteira usando Import math » trunc """
+    
+    import math
+    
+    numero = float(input('Digite um número: '))
+    numero = math.trunc(numero)
+    
+    print(f'A porção inteira do número é {numero}')
+    
+    
+    """ Obtendo a parte inteira usando INT """
+    
+    numero = float(input('Digite um número: '))
+    
+    print (f'A parte inteira do número é {int(numero)}')
+</div>
+                </code>
+            </pre>
+
+            <h2>Anotações</h2>
+            <p>Duas opções para quebrar um número e ter a sua parte inteira. Uma é converterndo o valor em inteiro <strong>int(valor)</strong>. A outra é chamando a biblioteca math e o metodo trunc <strong>trunc(valor)</strong></p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Exercicio 18</title>
+</head>
+<body>
+    <main>
+        <p class="voltar"><a href="../index.html">Voltar</a></p>
+        <section>
+            <h1>Exercicio 18</h1>
+            <p>Faça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo.</p>
+            <pre>
+                <code>
+<div>
+    from math import sin, radians, cos, tan
+
+    angulo = int(input('Digite o angulo que você deseja: '))
+    seno = sin(radians(angulo))
+    coseno = cos(radians(angulo))
+    tangente = tan(radians(angulo))
+
+    print(f'O seno do angulo de {angulo}º é {seno:.2f}.\
+    \nO coseno do angulo de {angulo}º é {coseno:.2f}.\
+     \nA tangente do angulo de {angulo}º é {tangente:.2f} ')
+</div>
+                </code>
+            </pre>
+
+            <h2>Anotações</h2>
+            <p>Para encontrar o valor de seno, coseno e tangente tem um metodo da biblioteca math que entrega esses resultados facilmente.</p>
+            <p>Observação: Existem duas maneiras de importar. A primeira <strong>import math</strong>, vai obrigar a usar sempre o math antes do metodo, exemplo: <strong>math.tan(valor)</strong>. A segunda <strong>from math import tan</strong>, vai dispensar o uso de math, exemplo: <strong>tan(valor)</strong>, no entanto será necessario importar metodo por metodo como no caso deste exercicio que foi importado <strong>sen, cos, tan</strong></p>
+        </section>
+    </main>
+</body>
+</html>
