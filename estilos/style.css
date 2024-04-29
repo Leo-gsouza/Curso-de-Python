@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* =========================================Paletas==================================================== 
+#3D74A3
+#FECE57
+#16363E
+#295C6A
+*/
+
+/*  ========================================Fontes===================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+/* =========================================Geral==================================================== */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html , body{
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--fonte-alatsi);
+    overflow-x: hidden;
+}
+
+:root {
+    --cor1: #3D74A3;
+    --cor2: #FECE57;
+    --cor3: #16363E;
+    --cor4: #295C6A;
+    --fonte-alatsi: "Alatsi";
+    --fonte-jersey: "Jersey 25";
+}
+
+/* ========================================  HEADER ==================================================*/
+
+header {
+    background-image: linear-gradient(to right, var(--cor4), var(--cor3)) ;
+    color: var(--cor2);
+    text-align: center;
+    box-shadow: 0px 0px 5px var(--cor2);
+}
+
+header > h1{
+    font-family: var(--fonte-jersey);
+    font-weight: bold;
+    font-size: 2em;
+    font-variant: small-caps;
+    padding: 20px 0px;
+
+    text-shadow: 0px 0px 15px black;
+}
+
+/* ========================================  BODY ==================================================*/
+
+main{
+    background-color: var(--cor1);
+    height: 100vh;
+}
+
+main > img{
+    width: 100%;
+    box-shadow: inset 0px 0px 15px black;
+}
+
+main > section{
+    margin: auto;
+    margin-top: 15px;
+    width: 300px;
+    padding: 5px 10px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+}
+
+section > h1{
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--cor4);
+    text-transform: uppercase;
+    padding: 10px 2px;
+}
+
+section > p{
+    text-align: justify;
+    text-indent: 10px;
+}
+
+section > h2{
+    text-align: center;
+    font-variant: small-caps;
+    color: var(--cor3);
+}
+
+section > p.botao{
+    text-align: center;
+    background-color: #3D74A3;
+    color: var(--cor2);
+    font-size: 1.2em;
+    padding: 10px 3px;
+    font-family: var(--fonte-alatsi);
+    border-radius: 5px 5px 0px 0px;
+    border: 7px solid var(--cor3);
+    margin-bottom: -2px;
+}
+
+p.exercicio{
+    background-color: var(--cor3);
+    color: white;
+    font-size: 1em;
+    width: 280px;
+    padding: 7px 10px;
+    text-shadow: 0px 0px 10px black;
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 6px;
+}
+
+p.exercicio > a{
+    color: var(--cor2);
+}
