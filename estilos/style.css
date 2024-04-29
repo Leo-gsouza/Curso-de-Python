@@ -23,6 +23,7 @@ html , body{
     height: 100vh;
     font-family: var(--fonte-alatsi);
     overflow-x: hidden;
+    background-color: var(--cor5);
 }
 
 :root {
@@ -30,6 +31,7 @@ html , body{
     --cor2: #FECE57;
     --cor3: #16363E;
     --cor4: #295C6A;
+    --cor5: #01304E;
     --fonte-alatsi: "Alatsi";
     --fonte-jersey: "Jersey 25";
 }
@@ -37,8 +39,8 @@ html , body{
 /* ========================================  HEADER ==================================================*/
 
 header {
-    background-image: linear-gradient(to right, var(--cor4), var(--cor3)) ;
-    color: var(--cor2);
+    background-color: var(--cor1);
+    color: yellow;
     text-align: center;
     box-shadow: 0px 0px 5px var(--cor2);
 }
@@ -46,17 +48,16 @@ header {
 header > h1{
     font-family: var(--fonte-jersey);
     font-weight: bold;
-    font-size: 2em;
+    font-size: 3em;
     font-variant: small-caps;
+    text-shadow: 0px 0px 3px var(--cor3);
     padding: 20px 0px;
-
-    text-shadow: 0px 0px 15px black;
 }
 
 /* ========================================  BODY ==================================================*/
 
 main{
-    background-color: var(--cor1);
+    background-color: var(--cor5);
     height: 100vh;
 }
 
@@ -105,7 +106,7 @@ section > p.botao{
     margin-bottom: -2px;
 }
 
-p.exercicio{
+section > p.exercicio{
     background-color: var(--cor3);
     color: white;
     font-size: 1em;
