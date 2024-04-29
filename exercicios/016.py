@@ -1,4 +1,4 @@
-""" Obitendo a parte inteira usando Import math » trunc """
+""" Obtendo a parte inteira usando Import math » trunc """
 
 import math
 
