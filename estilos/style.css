@@ -10,6 +10,8 @@
 /*  ========================================Fontes===================================================*/
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /* =========================================Geral==================================================== */
 
@@ -34,6 +36,8 @@ html , body{
     --cor5: #01304E;
     --fonte-alatsi: "Alatsi";
     --fonte-jersey: "Jersey 25";
+    --fonte-code: "Source Code Pro";
+    --fonte-pixel: "Press Start 2P" ;
 }
 
 /* ========================================  HEADER ==================================================*/
@@ -116,6 +120,7 @@ section > p.exercicio{
     text-shadow: 0px 0px 10px black;
     border-radius: 0px 0px 5px 5px;
     margin-bottom: 15px;
+    display: none;
 }
 p.exercicio > a{
     color: var(--cor2);
@@ -149,12 +154,26 @@ section > pre{
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: white;
+    background-color: lightgoldenrodyellow;
     border-radius: 15px;
+    box-sizing: border-box;
+}
+section > pre:hover{
+    background-color: white;
+    border: 5px solid var(--cor1);
+    box-shadow: 0px 0px 20px white;
+    box-sizing: border-box;
 }
 
-pre > code > div{
-    font-weight: bold;
+pre > code{
+    font-family: monospace ;
     font-size: 0.65em;
+    letter-spacing: -0.5px;
+    line-height: 12px;
+}
+
+
+pre > code > div{
+    font-weight: bolder;
     overflow: hidden;
 }
