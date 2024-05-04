@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +9,31 @@
 <body>
     <main>
         <p class="voltar"><a href="../index.html">Voltar</a></p>
-        <section>
-            <h1>Exercicio 19</h1>
-            <p>Faça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo.</p>
-            <pre>
-                <code>
-<div>
-    from random import choice
+        <section id="principal">
+            <section class="pagina">
+                <h1>Exercicio 19</h1>
+                <p>Um professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome dos alunos e escrevendo na tela o nome do escolhido.</p>
+                <pre>
+                    <code>
+            <div>
+from random import choice
 
-    aluno1 = str(input('Nome do 1º aluno: '))
-    aluno2 = str(input('Nome do 2º aluno: '))
-    aluno3 = str(input('Nome do 3º aluno: '))
-    aluno4 = str(input('Nome do 4º aluno: '))
+aluno1 = str(input('Nome do 1º aluno: '))
+aluno2 = str(input('Nome do 2º aluno: '))
+aluno3 = str(input('Nome do 3º aluno: '))
+aluno4 = str(input('Nome do 4º aluno: '))
 
-    alunos = [aluno1 , aluno2, aluno3, aluno4 ]
-    escolhido = choice(alunos)
+alunos = [aluno1 , aluno2, aluno3, aluno4 ]
+escolhido = choice(alunos)
 
-    print(f'O aluno escolhido foi {escolhido}')
-</div>
-                </code>
-            </pre>
-
-            <h2>Anotações</h2>
-            <p>Para sortear um valor dentro de uma lista dá para usar o metodo choice importado da biblioteca random. <br><strong>from random import choice</strong>.</p>
-            <p>Para criar uma lista usa-se o conchetes [].</p>
+print(f'O aluno escolhido foi {escolhido}')
+            </div>
+                    </code>
+                </pre>
+                <h2>Anotações</h2>
+                <p>Para sortear um valor dentro de uma lista dá para usar o metodo choice importado da biblioteca random. <br><strong>from random import choice</strong>.</p>
+                <p>Para criar uma lista usa-se o conchetes [].</p>
+            </section>
         </section>
     </main>
 </body>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Exercicio 23</title>
+</head>
+<body>
+    <main>
+        <p class="voltar"><a href="../index.html">Voltar</a></p>
+        <section id="principal">
+            <section class="pagina">
+                <h1>Exercicio 23</h1>
+                <p>Faça um programa que leia um número de 0 a 9999 e mostre na tela cada um dos dígitos separados.</p>
+                <pre>
+                    <code>
+            <div>
+from random import randint
+
+numero = randint(0, 9999)
+
+unidade = numero // 1 % 10
+dezena = numero // 10 % 10
+centena = numero // 100 % 10
+milhar = numero // 1000 % 10
+
+print(f'O numero sorteado foi {numero}\
+        \nMilhar » {milhar}\
+        \nCentena » {centena}\
+        \nDezena » {dezena}\
+        \nUnidade » {unidade}')
+            </div>
+                    </code>
+                </pre>
+                <h2>Anotações</h2>
+                <p>Para realizar um sorteio de 0 à 9999 foi importado a biblioteca <strong class="bib">RANDOM</strong> e o metodo <strong class="bib">RANDINT</strong></p>
+                <h2>Operação matematica</h2>
+                <p>Para encontrar os valores requisitados pelo exercicio foi usando uma operação matematica, primeiro foi realizado uma divisão inteira do numero sorteado e em seguida o resto da divisão. Vou tentar simplificar usando imagens com um passo a passo</p>
+                <img src="../imagens/ex023-1.jpg" alt="unidade">
+                <img src="../imagens/ex023-2.jpg" alt="dezena">
+                <img src="../imagens/ex023-3.jpg" alt="centena">
+                <img src="../imagens/ex023-4.jpg" alt="milhar">
+                <p>Observação: Note que na ultima imagem não foi possivel fazer a operação, pois o valor dentro da chave era maior do que o valor fora, ou seja, para iniciar essa divisão seria necessário acrescentar um zero e uma virgula, mas quando estamos tratando com divisão inteira e resto da divisão a operação acaba antes da virgula. Então o resto da divisão é o valor que está fora da chave </p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

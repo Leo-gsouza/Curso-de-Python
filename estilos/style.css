@@ -58,7 +58,7 @@ header > h1{
     padding: 20px 0px;
 }
 
-/* ========================================  BODY ==================================================*/
+/* ========================================  INDEX ==================================================*/
 
 main{
     background-color: var(--cor5);
@@ -70,7 +70,7 @@ main > img{
     box-shadow: inset 0px 0px 15px black;
 }
 
-main > section{
+main > section#principal{
     margin: auto;
     margin-top: 15px;
     width: 300px;
@@ -78,28 +78,36 @@ main > section{
     background-color: lightgoldenrodyellow;
     border-radius: 10px;
 }
-
-section > h1{
+section#principal > section.exercicios{
+    width: 270px;
+    margin: auto;
+    padding: 5px 10px;
+    background-color: white;
+    border: 5px solid var(--cor5);
+    display: none;
+}
+section#principal > h1{
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: var(--cor4);
     text-transform: uppercase;
     padding: 10px 2px;
+    font-family: var(--fonte-alatsi);
 }
 
-section > p{
+section#principal > p{
     text-align: justify;
     text-indent: 10px;
     margin-bottom: 15px;
 }
 
-section > h2{
+section#principal > h2{
     text-align: center;
     font-variant: small-caps;
     color: var(--cor3);
 }
 
-section > p.botao{
+section#principal > p.botao{
     text-align: center;
     background-color: #3D74A3;
     color: var(--cor2);
@@ -111,19 +119,32 @@ section > p.botao{
     margin-bottom: -2px;
 }
 
-section > p.exercicio{
-    background-color: var(--cor3);
-    color: white;
-    font-size: 1em;
-    width: 280px;
+section.exercicios > p{
+    text-align: justify;
+    color: black;
+    font-size: 1.1em;
     padding: 7px 10px;
-    text-shadow: 0px 0px 10px black;
-    border-radius: 0px 0px 5px 5px;
-    margin-bottom: 15px;
-    display: none;
+    margin-bottom: 10px;
 }
-p.exercicio > a{
-    color: var(--cor2);
+
+section.exercicios > p > a{
+    color: var(--cor5);
+    background-color: var(--cor2);
+    padding: 0px 6px;
+    border-radius: 5px;
+}
+
+section.exercicios > ol{
+    width: 250px;
+    font-size: 0.9em;
+    display: block;
+    margin: auto;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+ol > li{
+    margin-bottom: 3px;
 }
 
 p.voltar > a{
@@ -148,17 +169,39 @@ p.voltar > a{
     border-radius: 15px;
 }
 
-/* ========================================  CODE ==================================================*/
+/* ===================================== PAGINA EXERCICIOS ==========================================*/
 
-section > pre{
+section#principal > section.pagina{
+    text-align: center;
+}
+
+section.pagina > p{
+    padding: 6px;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    text-align: justify;
+    width: 250px;
+    line-height: 21.5px;
+    
+}
+
+section.pagina > img{
+    display: block;
+    margin: auto;
+    border: 3px solid var(--cor2);
+    box-sizing: border-box;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.596);
+}
+
+
+section.pagina > pre{
+    margin: 5px;
     background-color: lightgoldenrodyellow;
     border-radius: 15px;
     box-sizing: border-box;
+    text-align: left;
 }
-section > pre:hover{
+
+section.pagina > pre:hover{
     background-color: white;
     border: 5px solid var(--cor1);
     box-shadow: 0px 0px 20px white;
@@ -176,4 +219,31 @@ pre > code{
 pre > code > div{
     font-weight: bolder;
     overflow: hidden;
+    margin-left: 10px;
+}
+
+section.pagina > ol{
+    text-align: left;
+    width: 250px;
+    font-size: 0.9em;
+    display: block;
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+section.pagina > p > strong.com{
+    background-color: yellow;
+    color: black;
+    padding: 1px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+section.pagina > p > strong.bib{
+    background-color: purple;
+    color: white;
+    padding: 1px 5px;
+    border-radius: 5px;
+    font-weight: bold;
 }

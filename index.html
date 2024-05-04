@@ -12,37 +12,51 @@
     </header>
     <main>
         <img src="imagens/capa-principal.jpg" alt="capa">
-        <section>
+        <section id="principal">
             <h1>Introdução</h1>
             <p>Esta página tem como objetivo divulgar os exercicios do curso de python realizado pelo Gustavo Guanabara do curso em vídeo. É apenas uma maneira de fixar o conteudo e praticar o aprendizado obtido pelo curso <strong>HTML e CSS</strong> na construção do site. Além dos exercicios terá algumas anotações com dicas para ajudar na fixação do conteudo</p>
             <p><br>Os exercicios serão listados da seguinte maneira</p>
             <h2>Exercicios</h2>
-            <p class="botao" onclick="visivel_01()">16º até 20º</p>
-            <p class="exercicio" id="ex1">16º Crie um programa que leia um número real qualquer pelo teclado e mostre na tela a sua porção Inteira. Acesse o código » <a href="pag-exercicios/ex016.html">ex016</a>.<br> 
-            <br>17º Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo. Calcule e mostre o comprimento da hipotenusa. Acesse o codigo » <a href="pag-exercicios/ex017.html">ex017</a><br>
-            <br>18º Faça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo. Acesse o código » <a href="pag-exercicios/ex018.html">ex018</a>.<br>
-            <br>19º Um professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome dos alunos e escrevendo na tela o nome do escolhido. Acesse o código » <a href="pag-exercicios/ex019.html">ex019</a>.<br>
-            <br>20º O mesmo professor do desafio 19 quer sortear a ordem de apresentação de trabalhos dos alunos. Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada. Acesse o código » <a href="pag-exercicios/ex020.html">ex020</a>.<br></p>
 
+            <p class="botao" onclick="visivel_01()">16º até 20º</p>
+            <section class="exercicios" id="botao1">
+                <p>16º Crie um programa que leia um número real qualquer pelo teclado e mostre na tela a sua porção Inteira. Acesse o código » <a href="pag-exercicios/ex016.html">ex016</a>.</p>
+                <p>17º Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo. Calcule e mostre o comprimento da hipotenusa. Acesse o codigo » <a href="pag-exercicios/ex017.html">ex017</a></p>
+                <p>18º Faça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo. Acesse o código » <a href="pag-exercicios/ex018.html">ex018</a>.</p>
+                <p>19º Um professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome dos alunos e escrevendo na tela o nome do escolhido. Acesse o código » <a href="pag-exercicios/ex019.html">ex019</a>.</p>
+                <p>20º O mesmo professor do desafio 19 quer sortear a ordem de apresentação de trabalhos dos alunos. Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada. Acesse o código » <a href="pag-exercicios/ex020.html">ex020</a>.</p>
+
+            </section>
             <p class="botao" onclick="visivel_02()">21º até 25º</p>
-            <p class="exercicio" id="ex2">21º Faça um programa em Python que abra e reproduza o áudio de um arquivo MP3.</p> <br>
+            <section class="exercicios" id="botao2">
+                <p>21º Faça um programa em Python que abra e reproduza o áudio de um arquivo MP3. Acesse o código » <a href="pag-exercicios/ex021.html">ex021</a></p>
+                <p>22º Crie um programa que leia o nome completo de uma pessoa e mostre:
+                    <ol type="a">
+                        <li>O nome com todas as letras maiúsculas e minúsculas.</li>
+                        <li>Quantas letras ao todo (sem considerar espaços).</li>
+                        <li>Quantas letras tem o primeiro nome.</li>
+                    </ol>
+                <p>Acesse o código » <a href="pag-exercicios/ex022.html">ex022</a></p>
+                <p>23º Faça um programa que leia um número de 0 a 9999 e mostre na tela cada um dos dígitos separados. Acesse o código » <a href="pag-exercicios/ex023.html">ex023</a></p>
+            </section>
+        </section>
             
 
 
-        </section>
+        
     </main>
 
     <script>
         function visivel_01(){
-            if (ex1.style.display == 'block'){
-                ex1.style.display = 'none'}
-            else{ex1.style.display = 'block'}
+            if (botao1.style.display == 'block'){
+                botao1.style.display = 'none'}
+            else{botao1.style.display = 'block'}
         }
 
         function visivel_02(){
-            if (ex2.style.display == 'block'){
-                ex2.style.display = 'none'}
-            else{ex2.style.display = 'block'}
+            if (botao2.style.display == 'block'){
+                botao2.style.display = 'none'}
+            else{botao2.style.display = 'block'}
         }
     </script>    
 </body>

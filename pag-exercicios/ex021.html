@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/style.css">
-    <title>Exercicio 20</title>
+    <title>Exercicio 21</title>
 </head>
 <body>
     <main>
         <p class="voltar"><a href="../index.html">Voltar</a></p>
         <section id="principal">
             <section class="pagina">
-                <h1>Exercicio 20</h1>
-                <p>O mesmo professor do desafio 19 quer sortear a ordem de apresentação de trabalhos dos alunos. Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.</p>
+                <h1>Exercicio 21</h1>
+                <p>Faça um programa em Python que abra e reproduza o áudio de um arquivo MP3.</p>
                 <pre>
                     <code>
             <div>
@@ -31,8 +31,10 @@ print(f'A ordem sorteada pelo professor foi {alunos}')
                     </code>
                 </pre>
                 <h2>Anotações</h2>
-                <p>Para sortear a ordem dentro da lista foi usado o metodo shuffle importado também da biblioteca random. <br><strong>import random</strong>.</p>
-                <p>Observação: Note que neste exercicio foi importado so a biblioteca random e dentro do código foi usado <strong>random.shuffle(lista)</strong>. Mas poderia ter importado o metodo direto from random import shuffle, facilitando o uso do metodo dentro do codigo <strong>shuffle(lista)</strong> </p>
+                <p>1º Coloque o arquivo em mp3 na pasta principal, junto com o arquivo index. Exatamente como está na imagem abaixo</p>
+                <img src="../imagens/ex021-1.JPG" alt="Arquivo MP3">
+                <p>Existem varias bibliotecas para tocar musica, mas vamos usar o <strong>pygame</strong> que é utilizado para criar jogos </p>
+                <p>Para importa o pygame é necessario instalar ele. import pygame, clica em cima dele e baixe utilizando o Pycharm. <strong>Já no VSCode consegui instalar usando o terminal e digitando » python -m pip install -U pygame --user</strong>  </p>
             </section>
         </section>
     </main>

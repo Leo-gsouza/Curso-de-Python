@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Exercicio 22</title>
+</head>
+<body>
+    <main>
+        <p class="voltar"><a href="../index.html">Voltar</a></p>
+        <section id="principal">
+            <section class="pagina">
+                <h1>Exercicio 22</h1>
+                <p>Crie um programa que leia o nome completo de uma pessoa e mostre:
+                    <ol type="a">
+                        <li>O nome com todas as letras maiúsculas e minúsculas.</li>
+                        <li>Quantas letras ao todo (sem considerar espaços).</li>
+                        <li>Quantas letras tem o primeiro nome.</li>
+                    </ol>
+                </p>
+                <pre>
+                    <code>
+            <div>
+nome = str(input('Nome completo: ')).capitalize().strip()
+
+print(f'Nome em letra maiuscula » {nome.upper()}')
+print(f'Nome em letra minuscula » {nome.lower()}')
+print(f'Seu nome tem {len(nome) - nome.count(" ")} letras')
+print(f'Seu primeiro nome tem {nome.find(" ")} letras ')
+
+""" USANDO LISTA PARA SEPARAR O NOME """
+
+nome_separado = nome.split()
+
+print(f'Seu primeiro nome é {nome_separado[0]} 
+       e tem {len(nome_separado[0])} letras')
+            </div>
+                    </code>
+                </pre>
+                <h2>Anotações</h2>
+                <p>Foram usados seis comandos neste exercicio</p>
+                <p><strong class="com">UPPER()</strong> » Deixa todas as strings em maiusculo. Para utiliza-lo basta inserir ele após a variavel, exemplo: <strong>variavel.upper()</strong></p>
+                <p><strong class="com">LOWER()</strong> » Deixa todas as strings em minusculo. Para utiliza-lo basta inserir ele após a variavel, exemplo: <strong>variavel.lower()</strong></p>
+                <p><strong class="com">LEN()</strong> » Dá a quantidade de caracteres contida na variavel. Para utiliza-lo basta inserir ele antes e colocar a variavel entre parenteses, exemplo: <strong>len(variavel)</strong> </p>
+                <p><strong class="com">COUNT()</strong> » Contar o número de vezes que determinado caractere aparece em uma variavel. Para utiliza-lo basta inserir ele após a variavel, exemplo: <strong>variavel.count('inserir o caractere que deseja contar')</strong></p>
+                <p><strong class="com">FIND()</strong> » Encontrar a <strong>primeira posição</strong> de um determinado caractere dentro da variavel. Para utiliza-lo basta inserir ele após a variavel, exemplo: <strong>variavel.find('inserir o caractere que deseja encontrar')</strong></p>
+                <h2>Lista para separar o nome</h2>
+                <p><strong class="com">SPLIT()</strong> » O comando split cria uma lista. Cada caractere separado por espaço é transformado em um item dentro de uma lista. Vamos supor que a variavel nome contenha o valor = Ana Luisa Silva. Será criado uma lista [Ana, Luisa, Silva] con três itens. Para utiliza-lo basta inserir após a variavel, exemplo: <strong>variavel.split()</strong></p>
+                <p>observação: É recomendado criar outra variavel, exemplo: outra_variavel = (variavel.split). Desta forma essa outra variavel vai ter uma lista e a variavel original será preservada</p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
