@@ -232,7 +232,7 @@ section.pagina > ol{
     margin-top: 2px;
 }
 
-section.pagina > p > strong.com{
+section.pagina  strong.com{
     background-color: yellow;
     color: black;
     padding: 1px 5px;
@@ -240,7 +240,7 @@ section.pagina > p > strong.com{
     font-weight: bold;
 }
 
-section.pagina > p > strong.bib{
+section.pagina  strong.bib{
     background-color: purple;
     color: white;
     padding: 1px 5px;

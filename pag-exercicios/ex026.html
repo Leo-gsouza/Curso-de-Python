@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Exercicio 26</title>
+</head>
+<body>
+    <main>
+        <p class="voltar"><a href="../index.html">Voltar</a></p>
+        <section id="principal">
+            <section class="pagina">
+                <h1>Exercicio 26</h1>
+                <p>Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra “A”, em que posição ela aparece a primeira vez e em que posição ela aparece a última vez.</p>
+                <pre>
+                    <code>
+            <div>
+frase = str(input('Digite uma frase: ')).strip().lower()
+frase = frase.replace(' ', '')
+
+
+letra_a = 'a' in frase
+
+if letra_a:
+    print(f'A frase contém {frase.count("a")} letras A\
+            \nA 1ª letra A se encontra na {frase.find("a")+1}ª posição \
+            \nA ultima letra A se encontra na {frase.rfind("a")+1}ª posição')
+            </div>
+                    </code>
+                </pre>
+                <h2>Anotações</h2>
+                <p>Para resolver esse exercicio foi usado:</p>
+                <ol>
+                    <li><strong class="com">lower</strong> » Para deixar todas as letras minusculas e não ter problema com a digitação do usuario </li>
+                    <li><strong class="com">Replace</strong> » O comando replace substitui algo por outro, neste caso substituimos o espaço por nada, pois os espaços sáo contabilizados pelo <strong class="com">count</strong> e isto iria gerar problema no resultado</li>
+                    <li>variavel letra_a » foi criada para ter um valor boleano true ou false para dar continuidade no exercicio usando a condição SE, se existir "a" na frase seguimos por um lado, se não existir vamos por outro. </li>
+                    <li><strong class="com">count</strong> » o comando count contabiliza o numero de caracteres informado entre o parenteses <strong>variavel.count('busca')</strong>.</li>
+                    <li><strong class="com">find</strong> » O comando find vai encontra a primeira posição do caracetre informado <strong>variavel.find('busca')</strong></li>
+                    <li><strong class="com">rfind</strong> » O comando rfind vai encontra a ultima posição do caracetre informado <strong>variavel.rfind('busca')</strong></li>
+                    <li>Note que depois do find e rfind aparece um +1 que tem como objetivo somar + um com resultado encontrado pelo comando, devido ao fato da contagem iniciar do 0. exemplo: A letra R na palavra amar está na 4º posição para nós, mas para linguagem ela está na terceira, pois se inicia do zero » A=0, M=1, A=2, R=3. somando + 1 o resultado apresentado será 3 + 1 = 4, que para nós é a posição exata</li>
+                </ol>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

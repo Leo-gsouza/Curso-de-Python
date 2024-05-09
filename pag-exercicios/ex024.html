@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Exercicio 24</title>
+</head>
+<body>
+    <main>
+        <p class="voltar"><a href="../index.html">Voltar</a></p>
+        <section id="principal">
+            <section class="pagina">
+                <h1>Exercicio 24</h1>
+                <p>Crie um programa que leia o nome de uma cidade diga se ela começa ou não com o nome “SANTO”.</p>
+                <pre>
+                    <code>
+            <div>
+cidade = str(input('Nome da cidade: ')).strip().title()
+
+print(cidade[0:5] == 'Santo')
+
+""" Condição SE """
+
+if cidade[:5] == 'Santo':
+    print(f'Sim! A cidade {cidade} começa com Santo')
+else:
+    print(f'Não! A cidade {cidade} não começa com Santo')
+            </div>
+                    </code>
+                </pre>
+                <h2>Anotações</h2>
+                <p>Para resolver esse exercicio foi usado:</p>
+                <ol>
+                    <li><strong class="com">Strip</strong> » Para remover os espaços antes e depois da informação digitada pelo usuario </li>
+                    <li><strong class="com">Title</strong> » Vai deixar a string digitada com apenas a primeira letra maiuscula, para não interferir na comparação, pois letras maiusculas e minusculas fazem diferença</li>
+                    <li>cidade<strong class="com">[:5]</strong> » Para pegar os 5 primeiros caracteres digitados </li>
+                    <li>cidade<strong class="com">[:5]</strong> == 'Santo' » Comparar se os cinco primeiros digitos é igual a Santo</li>
+                    <li>No primeiro caso vai retonar true ou False apenas, já no segundo que foi colocado a <strong class="com">condição SE</strong>, vai retonar a mensagem digitada na condição</li>
+                </ol>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
