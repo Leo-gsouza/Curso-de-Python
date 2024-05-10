@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Exercicio 28</title>
+</head>
+<body>
+    <main>
+        <p class="voltar"><a href="../index.html">Voltar</a></p>
+        <section id="principal">
+            <section class="pagina">
+                <h1>Exercicio 28</h1>
+                <p>Escreva um programa que faça o computador “pensar” em um número inteiro entre 0 e 5 e peça para o usuário tentar descobrir qual foi o número escolhido pelo computador. O programa deverá escrever na tela se o usuário venceu ou perdeu.</p>
+                <pre>
+                    <code>
+                        <div>
+from random import randint
+
+computador = randint(1,5)
+
+jogador = int(input('Digite um número de 1 a 5 » '))
+
+if computador == jogador:
+    print(f'Venceu!\
+            \nComputador » {computador}\
+            \nJogador » {jogador}')
+else:
+        print(f'Perdeu!\
+            \nComputador » {computador}\
+            \nJogador » {jogador}')
+                        </div>
+                    </code>
+                </pre>
+                <h2>Anotações</h2>
+                <p>Para resolver esse exercicio foi usado:</p>
+                <ol>
+                    <li><strong class="bib">randint</strong> » O comando randint da biblioteca random faz um sorteio entre os numeros inseridos entre parenteses, exemplo: <strong>randint(5, 100)</strong>. Será sorteado um valor entre 5 e 100 e aplicado a variavel </li>
+                    <li><strong>Condição SE</strong> » Se o numero sorteado for igual( == )ao digitado pelo jogador terá como resultado venceu, caso contrario perdeu</li>
+                </ol>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

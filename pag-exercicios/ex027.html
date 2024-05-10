@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Exercicio 27</title>
+</head>
+<body>
+    <main>
+        <p class="voltar"><a href="../index.html">Voltar</a></p>
+        <section id="principal">
+            <section class="pagina">
+                <h1>Exercicio 27</h1>
+                <p>Faça um programa que leia o nome completo de uma pessoa, mostrando em seguida o primeiro e o último nome separadamente.</p>
+                <pre>
+                    <code>
+            <div>
+nome = str(input('Nome completo: ')).strip().title().split()
+
+primeiro_nome = nome[0]
+ultimo_nome = nome[-1]
+
+print(f'Seu primeiro nome é {primeiro_nome}\
+    \nSeu ultimo nome é {ultimo_nome}')
+            </div>
+                    </code>
+                </pre>
+                <h2>Anotações</h2>
+                <p>Para resolver esse exercicio foi usado:</p>
+                <ol>
+                    <li><strong class="com">split</strong> » O comando split transforma a string em uma lista usando os espaços como referencia. Exemplo: Entre João Almeida existe um espaço separando, o comando <strong>variavel.split()</strong> vai criar uma lista = [João, almeida] com dois itens dentro. </li>
+                    <li>variavel[0] » [0] representa o primeiro item dentro da lista</li>
+                    <li>variavel[-1] » [-1] representa o ultimo item dentro da lista </li>
+                </ol>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

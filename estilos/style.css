@@ -210,7 +210,7 @@ section.pagina > pre:hover{
 
 pre > code{
     font-family: monospace ;
-    font-size: 0.65em;
+    font-size: 0.75em;
     letter-spacing: -0.5px;
     line-height: 12px;
 }
@@ -218,8 +218,8 @@ pre > code{
 
 pre > code > div{
     font-weight: bolder;
-    overflow: hidden;
     margin-left: 10px;
+    overflow: scroll;
 }
 
 section.pagina > ol{
@@ -232,7 +232,11 @@ section.pagina > ol{
     margin-top: 2px;
 }
 
-section.pagina  strong.com{
+ol > li{
+    margin: 8px 1px;
+}
+
+strong.com{
     background-color: yellow;
     color: black;
     padding: 1px 5px;
@@ -240,7 +244,7 @@ section.pagina  strong.com{
     font-weight: bold;
 }
 
-section.pagina  strong.bib{
+strong.bib{
     background-color: purple;
     color: white;
     padding: 1px 5px;
